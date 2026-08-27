@@ -23,7 +23,7 @@
 
 body {
     background-color: black (--bg-page);
-    color: white (--text-main);
+    color: black (--text-main);
     line-height: 1.5;
     min-height: 100vh;
 }
