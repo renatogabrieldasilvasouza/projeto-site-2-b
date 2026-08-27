@@ -1,11 +1,11 @@
 /* --- DESIGN SYSTEM: EDITORIAL LIGHT --- */
 :root {
-    --bg-page: #bd1313;
-    --bg-card: #0a0a0a;
-    --text-main: #1e293b;
-    --text-muted: #64748b;
+    --bg-page: #0c0a0a;
+    --bg-card: #261181;
+    --text-main: #f0f2f5;
+    --text-muted: #1fdddd;
     --border-editorial: #0c6dec;
-    --accent-color: #e6e7e9;
+    --accent-color: #acacad1c;
     
     /* Tons Editoriais por Seção */
     --color-cores: #0284c7;
