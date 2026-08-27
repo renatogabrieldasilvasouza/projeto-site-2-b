@@ -22,8 +22,8 @@
 }
 
 body {
-    background-color: var(--bg-page);
-    color: var(--text-main);
+    background-color: black (--bg-page);
+    color: white (--text-main);
     line-height: 1.5;
     min-height: 100vh;
 }
