@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnis Óptica // Edição Editorial Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Seletores de Estado (CSS Puro) -->
+    <input type="radio" name="portal-switch" id="tab-home" checked>
+    <input type="radio" name="portal-switch" id="tab-cores">
+    <input type="radio" name="portal-switch" id="tab-espelhos">
+    <input type="radio" name="portal-switch" id="tab-olho">
+    <input type="radio" name="portal-switch" id="tab-leis">
+
+    <!-- CABEÇALHO EDITORIAL -->
+    <header class="editorial-header">
+        <div class="container">
+            <div class="meta-tag">Publicação Acadêmica &bull; ISSN 2974-01X</div>
+            <h1>OMNIS ÓPTICA</h1>
+            <p class="subtitle">Journal de Pesquisa e Simulação em Ciências da Luz</p>
+            
+            <nav class="editorial-nav">
+                <label for="tab-home" class="nav-item btn-home">Início</label>
+                <label for="tab-cores" class="nav-item btn-cores">01. Cores</label>
+                <label for="tab-espelhos" class="nav-item btn-espelhos">02. Espelhos</label>
+                <label for="tab-olho" class="nav-item btn-olho">03. Biofísica</label>
+                <label for="tab-leis" class="nav-item btn-leis">04. Enciclopédia</label>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CORPO PRINCIPAL -->
+    <main class="editorial-main">
+
+        <!-- TELA INICIAL -->
+        <section class="sub-site welcome-section">
+            <div class="welcome-card-clean">
+                <h2>Selecione um Artigo de Pesquisa</h2>
+                <p>Navegue pelos nossos cadernos temáticos utilizando a barra superior ou escolha um dos tópicos de estudo abaixo para iniciar a leitura.</p>
+                <div class="topic-grid">
+                    <label for="tab-cores" class="topic-card card-c">
+                        <span class="num">01</span>
+                        <h3>Física das Cores</h3>
+                        <p>Espectro, radiação e síntese aditiva.</p>
+                    </label>
+                    <label for="tab-espelhos" class="topic-card card-e">
+                        <span class="num">02</span>
+                        <h3>Espelhos Esféricos</h3>
+                        <p>Geometria de Gauss e formação de imagens.</p>
+                    </label>
+                    <label for="tab-olho" class="topic-card card-o">
+                        <span class="num">03</span>
+                        <h3>Biofísica Ocular</h3>
+                        <p>Dioptros biológicos e correção visual.</p>
+                    </label>
+                    <label for="tab-leis" class="topic-card card-l">
+                        <span class="num">04</span>
+                        <h3>Banco de Dados</h3>
+                        <p>Leis fundamentais e tabelas comparativas.</p>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- MÓDULO 01: CORES -->
+        <article id="site-cores" class="sub-site module-cores">
+            <div class="article-header">
+                <span class="section-tag">Caderno 01 // Espectro Eletromagnético</span>
+                <h2>Fenomenologia das Cores & Luz</h2>
+                <p>Uma análise detalhada sobre a radiação visível e a percepção cromática.</p>
+            </div>
+            
+            <div class="article-layout">
+                <aside class="info-sidebar">
+                    <div class="info-box">
+                        <span class="label">Faixa de Onda</span>
+                        <strong>400 nm a 700 nm</strong>
+                    </div>
+                    <div class="info-box">
+                        <span class="label">Modelo Padrão</span>
+                        <strong>RGB (Cores Primárias)</strong>
+                    </div>
+                    <div class="info-box">
+                        <span class="label">Velocidade no Vácuo</span>
+                        <strong>299.792 km/s</strong>
+                    </div>
+                </aside>
+
+                <div class="article-text">
+                    <h3>Dispersão e Espectroscopia</h3>
+                    <p>Quando a luz branca atravessa um meio refratário, ocorre a decomposição espetral sistemática devido à variação do índice de refração em função do comprimento de onda.</p>
+                    
+                    <h3>Síntese Aditiva de Feixes</h3>
+                    <p>A sobreposição de luzes monocromáticas primárias (vermelho, verde e azul) estimula os cones oculares de maneira síncrona, sintetizando a percepção do branco no córtex.</p>
+
+                    <div class="math-box">
+                        <span>Equação de Planck-Einstein</span>
+                        <code>E = h · f   |   f = c / λ</code>
+                    </div>
+                </div>
+
+                <div class="graphic-panel">
+                    <div class="canvas-box">
+                        <div class="color-fusion">
+                            <div class="c-circle red"></div>
+                            <div class="c-circle green"></div>
+                            <div class="c-circle blue"></div>
+                            <div class="c-text">BRANCO</div>
+                        </div>
+                    </div>
+                    <span class="caption">Figura 1.1: Sobreposição aditiva de feixes luminosos.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- MÓDULO 02: ESPELHOS -->
+        <article id="site-espelhos" class="sub-site module-espelhos">
+            <div class="article-header">
+                <span class="section-tag">Caderno 02 // Catóptrica Geométrica</span>
+                <h2>Sistemas de Espelhos Esféricos</h2>
+                <p>Mapeamento de superfícies refletoras côncavas e convexas sob as condições de Gauss.</p>
+            </div>
+            
+            <div class="article-layout">
+                <aside class="info-sidebar">
+                    <div class="info-box">
+                        <span class="label">Superfície</span>
+                        <strong>Côncava Convergente</strong>
+                    </div>
+                    <div class="info-box">
+                        <span class="label">Aproximação</span>
+                        <strong>Gaussiana (&lt; 10°)</strong>
+                    </div>
+                    <div class="info-box">
+                        <span class="label">Imagem Padrão</span>
+                        <strong>Real e Invertida</strong>
+                    </div>
+                </aside>
+
+                <div class="article-text">
+                    <h3>Teoria de Gauss para Espelhos</h3>
+                    <p>Para garantir a nitidez e evitar aberrações esféricas nas bordas, os raios refletores devem manter-se rigorosamente restritos próximos ao eixo principal.</p>
+                    
+                    <h3>Dinâmica de Incidência</h3>
+                    <p>O raio que incide paralelamente reflete passando pelo foco principal ($F$). O raio que incide sobre o centro de curvatura ($C$) reflete perfeitamente sobre si mesmo.</p>
+
+                    <div class="math-box">
+                        <span>Relação de Gauss & Ampliação Linear</span>
+                        <code>1/f = 1/p + 1/p'  ⇒  A = -p'/p</code>
+                    </div>
+                </div>
+
+                <div class="graphic-panel">
+                    <div class="canvas-box">
+                        <div class="mirror-diagram">
+                            <div class="line-axis"></div>
+                            <div class="mirror-curve"></div>
+                            <div class="obj-bar"></div>
+                            <div class="img-bar"></div>
+                        </div>
+                    </div>
+                    <span class="caption">Figura 2.1: Traçado geométrico foco-objeto em espelho côncavo.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- MÓDULO 03: OLHO -->
+        <article id="site-olho" class="sub-site module-olho">
+            <div class="article-header">
+                <span class="section-tag">Caderno 03 // Biofísica Ocular</span>
+                <h2>Engenharia do Aparelho Visual Humano</h2>
+                <p>Estudo dos dioptros biológicos, refração orgânica e correção de ametropias.</p>
+            </div>
+            
+            <div class="article-layout">
+                <aside class="info-sidebar">
+                    <div class="info-box">
+                        <span class="label">Índice do Cristalino</span>
+                        <strong>n ≈ 1.40</strong>
+                    </div>
+                    <div class="info-box">
+                        <span class="label">Acomodação Máxima</span>
+                        <strong>Até +4 Dioptrias</strong>
+                    </div>
+                    <div class="info-box">
+                        <span class="label">Vergência Total</span>
+                        <strong>Aprox. 60 D</strong>
+                    </div>
+                </aside>
+
+                <div class="article-text">
+                    <h3>A Refração nos Meios Oculares</h3>
+                    <p>A luz sofre desvio focal preciso ao atravessar as interfaces transparentes da córnea e do cristalino, convergindo perfeitamente sobre a matriz fotorreceptora da retina.</p>
+                    
+                    <h3>Processamento Neural da Imagem</h3>
+                    <p>A imagem projetada no fundo do olho é real e invertida. O córtex occipital processa os sinais elétricos gerados pelos cones e bastonetes, realizando a desinversão cognitiva.</p>
+
+                    <div class="math-box">
+                        <span>Lei de Snell-Descartes & Vergência</span>
+                        <code>n₁ · sin(θ₁) = n₂ · sin(θ₂) | V = 1/f</code>
+                    </div>
+                </div>
+
+                <div class="graphic-panel">
+                    <div class="canvas-box">
+                        <div class="eye-diagram">
+                            <div class="globe">
+                                <div class="c-lens"></div>
+                                <div class="retina-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="caption">Figura 3.1: Esquema de refração e foco na camada retiniana.</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- MÓDULO 04: LEIS E DOCUMENTAÇÃO -->
+        <article id="site-leis" class="sub-site module-leis">
+            <div class="article-header">
+                <span class="section-tag">Caderno 04 // Compêndio Geral</span>
+                <h2>Enciclopédia de Leis Fundamentais</h2>
+                <p>Matriz de consolidação teórica e tabela comparativa para pesquisadores.</p>
+            </div>
+            
+            <div class="article-layout full-width">
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <h4>Princípio de Fermat</h4>
+                        <p>A luz escolhe o trajeto físico que exige o menor tempo total de percurso entre dois pontos no espaço.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>Reversibilidade Óptica</h4>
+                        <p>As trajetórias dos raios luminosos permanecem rigorosamente idênticas ao terem o sentido invertido.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>Acomodação Ciliar</h4>
+                        <p>Ajuste dinâmico e mecânico da curvatura do cristalino para manutenção da nitidez focal a diferentes distâncias.</p>
+                    </div>
+                </div>
+
+                <div class="editorial-table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Caderno / Sistema</th>
+                                <th>Processo Físico Dominante</th>
+                                <th>Natureza da Imagem</th>
+                                <th>Aberração ou Anomalia Comum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Física Cromática</strong></td>
+                                <td class="table-hl">Emissão e Absorção Quântica</td>
+                                <td>Cognitiva / Perceptiva (RGB)</td>
+                                <td>Daltonismo (Acromatopsia)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Catóptrica (Espelhos)</strong></td>
+                                <td class="table-hl">Reflexão Especular Regular</td>
+                                <td>Real, Invertida e Reduzida</td>
+                                <td>Aberração Esférica de Borda</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dioptro Ocular</strong></td>
+                                <td class="table-hl">Refração por Meios Biológicos</td>
+                                <td>Real, Invertida e Reduzida</td>
+                                <td>Miopia / Hipermetropia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- SEÇÃO ADICIONAL: FÍSICA E PROJEÇÃO DA BOLA TRIONDA -->
+                <div class="article-text" style="margin-top: 40px;">
+                    <h3>Física e Projeção da Bola Trionda</h3>
+                    <p>A Trionda, bola oficial da Copa do Mundo da FIFA 2026™, foi projetada com uma construção de quatro painéis, costuras profundas e superfície texturizada. Essas características influenciam diretamente a interação entre a bola e o ar, contribuindo para uma trajetória mais estável durante o voo.</p>
+
+                    <h3>Aerodinâmica e Resistência do Ar</h3>
+                    <p>Quando a bola é chutada, ela sofre a ação de forças como a gravidade e a resistência do ar. As costuras profundas e a textura da superfície ajudam a distribuir os efeitos aerodinâmicos de maneira mais uniforme, reduzindo variações indesejadas na trajetória e aumentando a previsibilidade do movimento.</p>
+
+                    <h3>Rotação e Efeito Magnus</h3>
+                    <p>Um chute que produz rotação modifica o fluxo de ar ao redor da bola. Essa diferença na velocidade do ar pode gerar uma força lateral, conhecida como efeito Magnus, fazendo com que a trajetória seja curva. Por isso, chutes com diferentes intensidades e direções de rotação podem alterar significativamente o caminho da bola.</p>
+
+                    <h3>Projeção e Movimento</h3>
+                    <p>A trajetória da bola pode ser estudada como um movimento de projétil. Em uma situação ideal, sem resistência do ar, sua posição depende da velocidade inicial, do ângulo de lançamento e da aceleração da gravidade. Na prática, porém, a aerodinâmica e a rotação tornam o movimento mais complexo.</p>
+
+                    <div class="math-box">
+                        <span>Equações básicas da projeção</span>
+                        <code>x = v₀ · cos(θ) · t &nbsp; | &nbsp; y = v₀ · sen(θ) · t − (g · t²)/2</code>
+                    </div>
+
+                    <h3>Tecnologia e Análise do Movimento</h3>
+                    <p>Além do comportamento físico durante o jogo, a Trionda utiliza tecnologia de bola conectada com um sensor de movimento de 500 Hz. Os dados gerados ajudam a registrar com precisão os movimentos da bola e podem auxiliar os sistemas de arbitragem em tempo real.</p>
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="editorial-footer">
+        <p>Omnis Óptica &bull; Todos os direitos reservados &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
